@@ -1,18 +1,18 @@
-const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
+const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.' , 'Doctor Strange'];
 
-const myAvenger = [];
+let myAvenger = "";
 
 function findLongestWord() {
     for (const avenger of avengers) {
-        //console.log(avenger.length);
-        if (avenger.length === 10) {
-            myAvenger.push(avenger);
-            myAvenger.splice(1,1);    
+        console.log(avenger.length);
+        if (avenger.length > myAvenger.length) {
+            myAvenger = avenger;
         }
-        console.log(myAvenger);
+        
     }
 
 
     
 }
 findLongestWord();
+console.log(myAvenger);
