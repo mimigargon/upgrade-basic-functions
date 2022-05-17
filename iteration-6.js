@@ -18,7 +18,7 @@ const duplicates = [
 
   function removeDuplicates() {
       for (let food of duplicates) {
-        if (food === "pizza" || food === "pasta") {
+        if (food.includes ('pizza') || food.includes('pasta')) {
             duplicates.splice(5,1)
         }
       }    
